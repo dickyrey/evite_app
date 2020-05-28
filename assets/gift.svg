@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="34.879" viewBox="0 0 29 34.879">
+  <g id="gift" transform="translate(-6681 -330.121)">
+    <g id="Rectangle_70" data-name="Rectangle 70" transform="translate(6683 340)" fill="none" stroke="#3a3a3a" stroke-width="2">
+      <rect width="25" height="25" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="23" height="23" rx="2" fill="none"/>
+    </g>
+    <g id="Rectangle_71" data-name="Rectangle 71" transform="translate(6681 335)" fill="none" stroke="#3a3a3a" stroke-width="2">
+      <rect width="29" height="7" rx="1" stroke="none"/>
+      <rect x="1" y="1" width="27" height="5" fill="none"/>
+    </g>
+    <path id="Path_30" data-name="Path 30" d="M7,0l.229.359C7.222.349,3.557-5.321,1.074-4.188S2.609.359,2.609.359" transform="translate(6688.5 335.5)" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+    <path id="Path_31" data-name="Path 31" d="M.492,0,.263.359C.27.349,3.935-5.321,6.418-4.188S4.882.359,4.882.359" transform="translate(6695.5 335.5)" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+    <line id="Line_34" data-name="Line 34" x1="22" y2="22" transform="translate(6684.5 341.5)" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+    <path id="Path_33" data-name="Path 33" d="M11.626-1.272S.328,11.141,0,12" transform="translate(6695.5 351.5)" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+    <path id="Path_32" data-name="Path 32" d="M0,14l.531-.109,14-14.531" transform="translate(6683.5 341.5)" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+  </g>
+</svg>
