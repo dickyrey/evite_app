@@ -2,7 +2,13 @@ class Event {
   final String title;
   final String date;
   final String time;
-  Event({this.time, this.date, this.title});
+  final String image;
+  Event({
+    this.time,
+    this.date,
+    this.title,
+    this.image,
+  });
 }
 
 class Friend {
@@ -47,16 +53,56 @@ List<Friend> friendList = [
 ];
 
 List<Event> upcommingList = [
-  Event(title: "Birthday Breakfast", date: "Today", time: "10:30 - 14:00"),
-  Event(title: "Company Party", date: "1/06/2020", time: "08:00 - 10:00"),
-  Event(title: "Wedding Party", date: "10/06/2020", time: "15:30 - 20:00"),
-  Event(title: "4th Anniversary", date: "25/06/2020", time: "00:00 - 01:00"),
-  Event(title: "Jhon Birthday", date: "10/07/2020", time: "10:00 - 01:00"),
+  Event(
+      title: "Birthday Breakfast",
+      date: "Today",
+      time: "10:30 - 14:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "Company Party",
+      date: "1/06/2020",
+      time: "08:00 - 10:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "Wedding Party",
+      date: "10/06/2020",
+      time: "15:30 - 20:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "4th Anniversary",
+      date: "25/06/2020",
+      time: "00:00 - 01:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "Jhon Birthday",
+      date: "10/07/2020",
+      time: "10:00 - 01:00",
+      image: "assets/6.jpg"),
 ];
 List<Event> pastList = [
-  Event(title: "Moury Birthday", date: "02/03/2020", time: "10:00 - 01:00"),
-  Event(title: "1st Anniversary", date: "05/03/2020", time: "00:00 - 01:00"),
-  Event(title: "Company Party", date: "15/03/2020", time: "08:00 - 10:00"),
-  Event(title: "Wedding Party", date: "22/04/2020", time: "15:30 - 20:00"),
-  Event(title: "Birthday Breakfast", date: "30/04/2020", time: "10:30 - 14:00"),
+  Event(
+      title: "Moury Birthday",
+      date: "02/03/2020",
+      time: "10:00 - 01:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "1st Anniversary",
+      date: "05/03/2020",
+      time: "00:00 - 01:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "Company Party",
+      date: "15/03/2020",
+      time: "08:00 - 10:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "Wedding Party",
+      date: "22/04/2020",
+      time: "15:30 - 20:00",
+      image: "assets/6.jpg"),
+  Event(
+      title: "Birthday Breakfast",
+      date: "30/04/2020",
+      time: "10:30 - 14:00",
+      image: "assets/6.jpg"),
 ];

@@ -39,3 +39,8 @@ var kHintStyle = GoogleFonts.archivo(
     color: kGreyColor,
   ),
 );
+
+var kOrangeTextStyle = GoogleFonts.archivo(
+  textStyle: TextStyle(
+      fontSize: 16.0, fontWeight: FontWeight.w400, color: kOrangeColor),
+);

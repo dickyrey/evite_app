@@ -2,6 +2,8 @@ import 'package:evite/constants.dart';
 import 'package:evite/models/event.dart';
 import 'package:evite/widgets/event_card.dart';
 import 'package:evite/widgets/event_card_2.dart';
+import 'package:evite/widgets/past_tab.dart';
+import 'package:evite/widgets/upcomming_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -136,10 +138,7 @@ class _MyHomePageState extends State<MyHomePage>
                           Spacer(),
                           Text(
                             "+ Add new",
-                            style: kSubtitleStyle.copyWith(
-                              color: kOrangeColor,
-                              fontSize: 15.0,
-                            ),
+                            style: kOrangeTextStyle,
                           )
                         ],
                       ),
@@ -180,46 +179,6 @@ class _MyHomePageState extends State<MyHomePage>
           color: Colors.white,
         ),
       ),
-    );
-  }
-}
-
-class UpComming extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: upcommingList.length,
-      scrollDirection: Axis.horizontal,
-      shrinkWrap: true,
-      physics: BouncingScrollPhysics(),
-      itemBuilder: (BuildContext context, int index) {
-        var event = upcommingList[index];
-        return event.date == "Today"
-            ? EventCard(
-                event: event,
-              )
-            : EventCard2(event: event);
-      },
-    );
-  }
-}
-
-class Past extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: pastList.length,
-      scrollDirection: Axis.horizontal,
-      shrinkWrap: true,
-      physics: BouncingScrollPhysics(),
-      itemBuilder: (BuildContext context, int index) {
-        var event = pastList[index];
-        return event.date == "Today"
-            ? EventCard(
-                event: event,
-              )
-            : EventCard2(event: event);
-      },
     );
   }
 }
