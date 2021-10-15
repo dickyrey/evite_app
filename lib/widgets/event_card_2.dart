@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class EventCard2 extends StatelessWidget {
-  final Event event;
+  final Event? event;
   EventCard2({this.event});
   @override
   Widget build(BuildContext context) {
@@ -22,14 +22,14 @@ class EventCard2 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SvgPicture.asset(
-            event.title == "Birthday Breakfast"
+            event!.title == "Birthday Breakfast"
                 ? "assets/birthday.svg"
                 : "assets/party.svg",
             width: 25.0,
             color: kOrangeColor,
           ),
           Text(
-            event.title,
+            event!.title!,
             style: kTitleStyle.copyWith(
               color: Colors.black,
             ),
@@ -42,7 +42,7 @@ class EventCard2 extends StatelessWidget {
             ),
           ),
           Text(
-            "${event.date}\n${event.time}",
+            "${event!.date}\n${event!.time}",
             style: kSubtitleStyle.copyWith(
               color: kOrangeColor,
             ),

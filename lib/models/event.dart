@@ -1,8 +1,8 @@
 class Event {
-  final String title;
-  final String date;
-  final String time;
-  final String image;
+  final String? title;
+  final String? date;
+  final String? time;
+  final String? image;
   Event({
     this.time,
     this.date,
@@ -12,10 +12,10 @@ class Event {
 }
 
 class Friend {
-  final String name;
-  final String date;
-  final String age;
-  final String image;
+  final String? name;
+  final String? date;
+  final String? age;
+  final String? image;
   Friend({this.age, this.date, this.image, this.name});
 }
 

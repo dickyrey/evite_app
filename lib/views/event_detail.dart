@@ -6,7 +6,7 @@ import 'package:evite/widgets/guest_list_tab.dart';
 import 'package:flutter/material.dart';
 
 class EventDetail extends StatefulWidget {
-  final Event event;
+  final Event? event;
   EventDetail({this.event});
 
   @override
@@ -15,7 +15,7 @@ class EventDetail extends StatefulWidget {
 
 class _EventDetailState extends State<EventDetail>
     with SingleTickerProviderStateMixin {
-  TabController _controller;
+  TabController? _controller;
   @override
   void initState() {
     super.initState();
@@ -37,7 +37,7 @@ class _EventDetailState extends State<EventDetail>
                 height: 300,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage(widget.event.image),
+                    image: AssetImage(widget.event!.image!),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -55,7 +55,7 @@ class _EventDetailState extends State<EventDetail>
                 height: 50.0,
                 child: Row(
                   children: [
-                    Text(widget.event.date, style: kOrangeTextStyle),
+                    Text(widget.event!.date!, style: kOrangeTextStyle),
                     SizedBox(width: 15.0),
                     Expanded(
                       child: Divider(
@@ -64,14 +64,14 @@ class _EventDetailState extends State<EventDetail>
                       ),
                     ),
                     SizedBox(width: 15.0),
-                    Text(widget.event.time, style: kOrangeTextStyle),
+                    Text(widget.event!.time!, style: kOrangeTextStyle),
                   ],
                 ),
               ),
               Container(
                 width: 100.0,
                 margin: EdgeInsets.only(left: 18.0),
-                child: Text(widget.event.title, style: kTitleStyle),
+                child: Text(widget.event!.title!, style: kTitleStyle),
               ),
               SizedBox(height: 15.0),
               TabBar(

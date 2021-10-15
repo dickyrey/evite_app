@@ -1,7 +1,5 @@
 import 'package:evite/constants.dart';
 import 'package:evite/models/event.dart';
-import 'package:evite/widgets/event_card.dart';
-import 'package:evite/widgets/event_card_2.dart';
 import 'package:evite/widgets/past_tab.dart';
 import 'package:evite/widgets/upcomming_tab.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +12,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
-  TabController _controller;
+  TabController? _controller;
   @override
   void initState() {
     super.initState();
@@ -153,9 +151,9 @@ class _MyHomePageState extends State<MyHomePage>
                         return ListTile(
                           leading: CircleAvatar(
                             radius: 27.0,
-                            backgroundImage: AssetImage(friend.image),
+                            backgroundImage: AssetImage(friend.image!),
                           ),
-                          title: Text(friend.name, style: kTitleStyle),
+                          title: Text(friend.name!, style: kTitleStyle),
                           subtitle: Text(
                             "${friend.date} - ${friend.age} Birthday",
                             style: kSubtitleStyle,

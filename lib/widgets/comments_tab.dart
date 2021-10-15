@@ -15,9 +15,9 @@ class CommentsTab extends StatelessWidget {
         return ListTile(
           leading: CircleAvatar(
             radius: 27.0,
-            backgroundImage: AssetImage(friend.image),
+            backgroundImage: AssetImage(friend.image!),
           ),
-          title: Text(friend.name, style: kTitleStyle),
+          title: Text(friend.name!, style: kTitleStyle),
           subtitle: Text(
             "I'm so exited!!",
             style: kSubtitleStyle,
