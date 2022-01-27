@@ -1,24 +1,22 @@
-
 import 'package:evite/models/event.dart';
+import 'package:evite/views/event_detail.dart';
 import 'package:evite/widgets/event_card.dart';
-import 'package:evite/widgets/event_card_2.dart';
 import 'package:flutter/material.dart';
 
-class Past extends StatelessWidget {
+class EventTabBarView extends StatelessWidget {
+  final List<Event> events;
+
+  const EventTabBarView({Key? key, required this.events}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: pastList.length,
+      itemCount: events.length,
       scrollDirection: Axis.horizontal,
       shrinkWrap: true,
       physics: BouncingScrollPhysics(),
       itemBuilder: (BuildContext context, int index) {
-        var event = pastList[index];
-        return event.date == "Today"
-            ? EventCard(
-                event: event,
-              )
-            : EventCard2(event: event);
+        var event = events[index];
+        return EventCard(event: event);
       },
     );
   }
