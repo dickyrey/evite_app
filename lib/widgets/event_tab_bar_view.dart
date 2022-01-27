@@ -1,5 +1,4 @@
 import 'package:evite/models/event.dart';
-import 'package:evite/views/event_detail.dart';
 import 'package:evite/widgets/event_card.dart';
 import 'package:flutter/material.dart';
 
